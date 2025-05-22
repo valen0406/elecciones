@@ -1,21 +1,16 @@
-/* Fuente y fondo general */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ffeef4;
-    /* fondo rosa muy claro */
     color: #333;
     text-align: center;
     margin: 0;
     padding: 20px;
 }
 
-/* Título principal */
 h1 {
     color: #d63384;
-    /* rosa fuerte */
 }
 
-/* Botones principales */
 .botones {
     margin-bottom: 20px;
 }
@@ -36,7 +31,6 @@ h1 {
     background-color: #e85c9c;
 }
 
-/* Contenedor de candidatos */
 .grid-candidatos {
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +38,6 @@ h1 {
     gap: 20px;
 }
 
-/* Tarjeta de cada candidato */
 .candidato {
     background-color: white;
     border: 2px solid #f8a1c4;
@@ -64,7 +57,6 @@ h1 {
     color: #d63384;
 }
 
-/* Imagen del candidato */
 .candidato img {
     width: 150px;
     height: 150px;
@@ -75,7 +67,6 @@ h1 {
     cursor: pointer;
 }
 
-/* Texto debajo de la foto */
 .candidato p {
     margin: 4px 0;
 }
@@ -84,7 +75,6 @@ h1 {
     color: #d63384;
 }
 
-/* Resultado */
 #resultado {
     margin-top: 30px;
 }
@@ -96,7 +86,7 @@ h1 {
     gap: 20px;
 }
 
-/* Modal de confirmación */
+
 .modal {
     position: fixed;
     top: 0;
@@ -134,7 +124,7 @@ h1 {
     background-color: #ccc;
 }
 
-/* Ocultar elementos */
+
 .oculto {
     display: none;
 }
