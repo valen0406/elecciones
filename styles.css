@@ -1,0 +1,140 @@
+/* Fuente y fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffeef4;
+    /* fondo rosa muy claro */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    color: #d63384;
+    /* rosa fuerte */
+}
+
+/* Botones principales */
+.botones {
+    margin-bottom: 20px;
+}
+
+.botones button {
+    background-color: #f8a1c4;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.botones button:hover {
+    background-color: #e85c9c;
+}
+
+/* Contenedor de candidatos */
+.grid-candidatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Tarjeta de cada candidato */
+.candidato {
+    background-color: white;
+    border: 2px solid #f8a1c4;
+    border-radius: 12px;
+    width: 220px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.candidato:hover {
+    transform: scale(1.03);
+}
+
+.candidato h3 {
+    margin-top: 0;
+    color: #d63384;
+}
+
+/* Imagen del candidato */
+.candidato img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #f8a1c4;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Texto debajo de la foto */
+.candidato p {
+    margin: 4px 0;
+}
+
+.candidato p strong {
+    color: #d63384;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 30px;
+}
+
+#resultadoCandidatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Modal de confirmación */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-contenido button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#confirmarVoto {
+    background-color: #d63384;
+    color: white;
+}
+
+#cancelarVoto {
+    background-color: #ccc;
+}
+
+/* Ocultar elementos */
+.oculto {
+    display: none;
+}
