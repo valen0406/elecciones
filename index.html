@@ -5,39 +5,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elección de Representantes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <h1>Elección de Representantes - CTPI</h1>
-
-    <div class="botones">
-        <button id="btnIniciar">Iniciar Elecciones</button>
-        <button id="btnCerrar">Cerrar Elecciones</button>
+    <div class="decoracion-superior"></div>
+    <div class="tarjeta">
+        <h1>🌸 Elección de Representantes - CTPI 🌸</h1>
+    
+        <div class="botones">
+            <button id="btnIniciar">Iniciar Elecciones</button>
+            <button id="btnCerrar">Cerrar Elecciones</button>
+        </div>
+        
+        <div id="contenedor-candidatos" class="grid-candidatos"></div>
+    
+        <div id="resultado" class="oculto">
+            <h2>Resultado de la votación</h2>
+            <div id="resultadoCandidatos"></div>
+        </div>
+    
+        <button id="btnReiniciar" class="oculto">Reiniciar Votación</button>
     </div>
-        <div id="formCodigo">
-        <label for="codigo">Ingresa tu código para votar:</label><br>
-        <input type="text" id="codigo" placeholder="Ej: 123456" />
-        <button id="btnVerificarCodigo">Validar Código</button>
-    </div>
-
-
-    <div id="contenedor-candidatos" class="grid-candidatos"></div>
-
-    <div id="resultado" class="oculto">
-        <h2>Resultado de la votación</h2>
-        <div id="resultadoCandidatos"></div>
-    </div>
-
+    
+    <div class="decoracion-inferior"></div>
+    
     <div id="modalVoto" class="modal oculto">
         <div class="modal-contenido">
             <p>¿Estás seguro de que deseas votar por este candidato?</p>
             <button id="confirmarVoto">Sí, votar</button>
             <button id="cancelarVoto">Cancelar</button>
         </div>
-    </div>
-
+        </div>
     <script src="script.js"></script>
+    
 </body>
 
 

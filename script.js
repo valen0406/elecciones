@@ -125,6 +125,24 @@ function mostrarResultados() {
 
     // Mostrar ventana emergente con resumen
     alert(resumenTexto);
+
+    // Mostrar la imagen del ganador si hay un único ganador
+    if (ganadores.length === 1) {
+        const nombreGanador = nombresCandidatos[ganadores[0]];
+        const fotoGanador = document.querySelector(`img[data-id="${ganadores[0]}"]`).src;
+
+        resultadoDiv.innerHTML += `
+        <div class="ganador-destacado">
+            <img src="${fotoGanador}" alt="Ganador ${nombreGanador}" class="foto-ganador" />
+            <p><strong>🏆 ${nombreGanador}</strong></p>
+            <p>${maxVotos} voto(s)</p>
+        </div>`;
+    }
+
+    document.getElementById("btnReiniciar").classList.remove("oculto");
+    document.getElementById("btnReiniciar").addEventListener("click", () => location.reload());
+
+
 }
 
 
